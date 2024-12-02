@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ensure full width for content */
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white; /* Ensure logo text is visible */
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Side Panel */
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #555555;
+    padding: 0.5rem 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+.side-panel:hover {
+    width: 200px; /* Expand on hover */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.menu-icons li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 0.5rem;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu-icons li .name {
+    display: none; /* Hide names initially */
+    color: white;
+    font-size: 16px;
+}
+
+.side-panel:hover .menu-icons li .name {
+    display: inline-block; /* Show names on hover */
+}
+
+.menu-icons .icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Make icons white */
+}
+
+.menu-icons a.active {
+    background-color: #f39c12; /* Change the background color when active */
+    color: white; /* Change the text color */
+    text-decoration: underline; /* Underline the active link */
+}
+
+/* Logout Button at the Bottom */
+.logout {
+    margin-top: auto; /* Push the logout button to the bottom */
+    padding: 1rem;
+    text-align: center;
+    filter: brightness(0) invert(1);
+    display: flex; /* Ensure logout icon is visible initially */
+    justify-content: center;
+}
+
+.logout .name {
+    display: none; /* Hide the name initially */
+}
+
+.logout img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Make the logout icon white */
+}
+
+.side-panel:hover .logout .name {
+    display: inline-block; /* Show the logout name on hover */
+}
+
+
+/* Main Content */
+main {
+    margin-left: 60px; /* Adjust for side panel width */
+    flex: 1;
+    padding: 1rem;
+}
+
+.panel {
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: auto;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+
+.footer-content a {
+    color: white; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-content a:hover {
+    color: #f39c12; /* Highlight color on hover (can be any color you like) */
+    text-decoration: underline; /* Underline the link on hover */
+}

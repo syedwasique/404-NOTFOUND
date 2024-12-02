@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(135deg, #000428, #004e92); /* Black with shades of blue */
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.jumbotron .container {
+  background: rgba(255, 255, 255, 0.1); /* Subtle transparent background */
+  border-radius: 15px;
+  padding: 30px;
+  display: inline-block;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron .fa-code-branch {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.jumbotron hr {
+  width: 60%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 20px auto;
+}
+
+.jumbotron .btn {
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.jumbotron .btn-light {
+  background: #ffffff;
+  color: #000428;
+  border: none;
+}
+
+.jumbotron .btn-dark {
+  background: #004e92;
+  color: #ffffff;
+  border: none;
+}
+
+.jumbotron .btn:hover {
+  opacity: 0.9;
+}
+
